@@ -1,0 +1,23 @@
+# 排除开发相关文件
+.vscode/
+.vscode-test/
+node_modules/
+*.vsix
+
+# 排除源代码目录（只保留编译后的 out/ 目录）
+src/
+
+# 排除规则文件目录
+rules/
+
+# 排除开发配置文件
+.gitignore
+tsconfig.json
+package-lock.json
+
+# 注意：以下文件会被自动包含（VS Code 扩展必需）：
+# - package.json
+# - README.md  
+# - LICENSE
+# - templates.json (用户要求包含)
+# - out/ 目录下的编译文件

@@ -1,0 +1,62 @@
+{
+  "name": "oh-my-cursorrules",
+  "displayName": "Oh My Cursorrules",
+  "description": "生成Cursor AI规则的插件",
+  "version": "1.0.0",
+  "publisher": "iseekfun",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iseekfun/oh-my-cursorrules"
+  },
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:oh-my-cursorrules.generate",
+    "onCommand:oh-my-cursorrules.update"
+  ],
+  "main": "./out/extension.js",
+    "contributes": {
+      "commands": [
+        {
+          "command": "oh-my-cursorrules.generate",
+          "title": "生成 CursorRules 文件",
+          "category": "CursorRules"
+        },
+        {
+          "command": "oh-my-cursorrules.update",
+          "title": "更新模板",
+          "category": "CursorRules"
+        }
+      ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "oh-my-cursorrules.generate",
+          "group": "navigation",
+          "when": "explorerResourceIsFolder"
+        }
+      ],
+      "commandPalette": [
+        {
+          "command": "oh-my-cursorrules.generate"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p .",
+    "watch": "tsc -watch -p ./",
+    "build:package": "node build-package.js",
+    "package": "npm run compile && npm run build:package"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.74.0",
+    "@types/node": "16.x",
+    "typescript": "^4.9.4"
+  }
+}

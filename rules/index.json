@@ -1,0 +1,93 @@
+[
+    {
+        "name": "game-cocos",
+        "path": "game-cocos.cursorrules",
+        "description": "适用于Cocos Creator游戏开发的AI助手规则",
+        "category": "游戏开发",
+        "tags": ["cocos", "typescript", "游戏", "前端"]
+    },
+    {
+        "name": "app-android",
+        "path": "app-android.cursorrules",
+        "description": "适用于Android应用开发的AI助手规则",
+        "category": "移动开发",
+        "tags": ["android", "kotlin", "jetpack", "移动端"]
+    },
+    {
+        "name": "app-flutter",
+        "path": "app-flutter.cursorrules",
+        "description": "适用于Flutter跨平台应用开发的AI助手规则",
+        "category": "移动开发",
+        "tags": ["flutter", "dart", "跨平台", "移动端"]
+    },
+    {
+        "name": "app-RN",
+        "path": "app-RN.cursorrules",
+        "description": "适用于React Native跨平台应用开发的AI助手规则",
+        "category": "移动开发",
+        "tags": ["react-native", "javascript", "跨平台", "移动端"]
+    },
+    {
+        "name": "app-ios",
+        "path": "app-ios.cursorrules",
+        "description": "适用于iOS应用开发的AI助手规则",
+        "category": "移动开发",
+        "tags": ["ios", "swift", "swiftui", "移动端"]
+    },
+    {
+        "name": "app-chrome",
+        "path": "app-chrome.cursorrules",
+        "description": "适用于Chrome浏览器扩展开发的AI助手规则",
+        "category": "浏览器扩展",
+        "tags": ["chrome", "extension", "javascript", "manifest-v3"]
+    },
+    {
+        "name": "app-python",
+        "path": "app-python.cursorrules",
+        "description": "适用于Python项目开发的AI助手规则",
+        "category": "后端开发",
+        "tags": ["python", "后端", "脚本"]
+    },
+    {
+        "name": "app-weixin",
+        "path": "app-weixin.cursorrules",
+        "description": "适用于微信小程序开发的AI助手规则",
+        "category": "小程序开发",
+        "tags": ["微信", "小程序", "javascript", "移动端"]
+    },
+    {
+        "name": "web-html",
+        "path": "web-html.cursorrules",
+        "description": "适用于HTML/CSS/JavaScript网页开发的AI助手规则",
+        "category": "前端开发",
+        "tags": ["html", "css", "javascript", "前端"]
+    },
+    {
+        "name": "web-nextjs",
+        "path": "web-nextjs.cursorrules",
+        "description": "适用于Next.js 14全栈应用开发的AI助手规则",
+        "category": "前端开发",
+        "tags": ["nextjs", "react", "typescript", "全栈"]
+    },
+    {
+        "name": "web-react",
+        "path": "web-react.cursorrules",
+        "description": "适用于React应用开发的AI助手规则",
+        "category": "前端开发",
+        "tags": ["react", "javascript", "typescript", "前端"]
+    },
+    {
+        "name": "web-vue",
+        "path": "web-vue.cursorrules",
+        "description": "适用于Vue.js应用开发的AI助手规则",
+        "category": "前端开发",
+        "tags": ["vue", "javascript", "typescript", "前端"]
+    },
+    {
+        "name": "generic",
+        "path": "generic.cursorrules",
+        "description": "通用编程助手规则，适用于各种技术栈",
+        "category": "通用开发",
+        "tags": ["通用", "编程", "设计", "产品"]
+    }
+]
