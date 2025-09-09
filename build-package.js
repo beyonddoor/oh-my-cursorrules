@@ -6,12 +6,12 @@ const { execSync } = require('child_process');
 
 console.log('🚀 开始构建 VS Code 扩展包...\n');
 
-// 1. 确保 package 目录存在
+// 1. 清理并创建 package 目录
 const packageDir = path.join(__dirname, 'package');
-if (!fs.existsSync(packageDir)) {
-    console.log('❌ package 目录不存在，请先运行构建脚本');
-    process.exit(1);
+if (fs.existsSync(packageDir)) {
+    fs.rmSync(packageDir, { recursive: true });
 }
+fs.mkdirSync(packageDir);
 
 // 2. 同步最新文件到 package 目录
 console.log('📋 同步文件到 package 目录...');
@@ -29,13 +29,29 @@ for (const file of filesToSync) {
     const destPath = path.join(packageDir, file);
     
     if (fs.existsSync(srcPath)) {
-        fs.copyFileSync(srcPath, destPath);
+        if (file === 'package.json') {
+            // 读取package.json
+            const packageJson = JSON.parse(fs.readFileSync(srcPath, 'utf8'));
+            // 移除scripts节点
+            delete packageJson.scripts;
+            // 写入修改后的package.json
+            fs.writeFileSync(destPath, JSON.stringify(packageJson, null, 2));
+        } else {
+            fs.copyFileSync(srcPath, destPath);
+        }
         console.log(`✅ 同步 ${file}`);
     } else {
         console.log(`❌ 源文件不存在: ${file}`);
         process.exit(1);
     }
 }
+
+// 同步源代码目录
+const srcDir = path.join(packageDir, 'src');
+if (!fs.existsSync(srcDir)) {
+    fs.mkdirSync(srcDir, { recursive: true });
+}
+
 
 // 同步编译后的文件
 const outDir = path.join(packageDir, 'out');

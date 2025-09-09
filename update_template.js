@@ -8,7 +8,7 @@ const fs = require('fs');
 const path = require('path');
 
 // 获取当前脚本所在目录
-const currentDir = __dirname;
+const currentDir = path.join(__dirname, 'rules');
 
 // 读取index.json文件
 function readIndexJson() {

@@ -28,7 +28,7 @@ interface TemplateQuickPickItem extends vscode.QuickPickItem {
 
 // 配置常量
 const CONFIG = {
-    TEMPLATES_URL: 'https://raw.githubusercontent.com/your-repo/cursorrules-templates/main/templates.json',
+    TEMPLATES_URL: 'http://8.141.118.63/static/oh-my-cursorrules/templates.json',
     LOCAL_TEMPLATES_FILE: 'templates.json',
     CACHE_KEY: 'cursorrules-templates-cache'
 };
@@ -285,6 +285,8 @@ async function showTemplateSelection(): Promise<CursorRulesTemplate | undefined>
             });
         });
     });
+
+    console.log(items);
 
     // 显示选择菜单
     const selectedItem = await vscode.window.showQuickPick(items, {

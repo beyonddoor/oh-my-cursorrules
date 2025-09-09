@@ -2,11 +2,11 @@
   "name": "oh-my-cursorrules",
   "displayName": "Oh My Cursorrules",
   "description": "生成Cursor AI规则的插件",
-  "version": "1.0.0",
-  "publisher": "iseekfun",
+  "version": "1.0.2",
+  "publisher": "Freeman",
   "repository": {
     "type": "git",
-    "url": "https://github.com/iseekfun/oh-my-cursorrules"
+    "url": "https://github.com/beyonddoor/oh-my-cursorrules"
   },
   "engines": {
     "vscode": "^1.74.0"
@@ -24,12 +24,12 @@
         {
           "command": "oh-my-cursorrules.generate",
           "title": "生成 CursorRules 文件",
-          "category": "CursorRules"
+          "category": "Oh-My-CursorRules"
         },
         {
           "command": "oh-my-cursorrules.update",
-          "title": "更新模板",
-          "category": "CursorRules"
+          "title": "更新 CursorRules",
+          "category": "Oh-My-CursorRules"
         }
       ],
     "menus": {

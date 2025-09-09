@@ -89,5 +89,19 @@
         "description": "通用编程助手规则，适用于各种技术栈",
         "category": "通用开发",
         "tags": ["通用", "编程", "设计", "产品"]
+    },
+    {
+        "name": "server-c++",
+        "path": "server-c++.cursorrules",
+        "description": "c++服务器开发",
+        "category": "后端开发",
+        "tags": ["c++", "后端"]
+    },
+    {
+        "name": "server-cpp",
+        "path": "server-c++.cursorrules",
+        "description": "c++服务器开发",
+        "category": "后端开发",
+        "tags": ["c++", "后端"]
     }
 ]
